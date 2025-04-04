@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Declaração do tipo de documento, indicando que este é um documento HTML5 --
+>
+<html lang="pt-BR">
+<!-- Início do documento HTML e definição do idioma principal como Português do
+Brasil -->
+
 <head>
+    <!-- Cabeçalho da página contendo informações e configurações essenciais -->
     <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8 para suportar acentos e
+caracteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Configura a página para ser responsiva, ajustando a largura ao tamanho do
+dispositivo -->
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- Define o ícone da aba do navegador (favicon) -->
+
+    <title>Layout tipo posts com CSS</title>
+    <!-- Define o título da página que aparecerá na aba do navegador -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importa o arquivo de estilos externo (CSS) para estilizar a página -->
 </head>
+<!-- Fim da seção head -->
+
 <body>
-    
+    <!-- Início do corpo do documento, onde todo o conteúdo visível da página será
+   colocado -->
+    <div class="container">
+        <!-- Div principal que serve como um "container" para estruturar o layout da
+   página -->
+        <div class="sidebar">
+            <!-- Barra lateral da página contendo a logo e o menu de navegação -->
+            <div class="logo">
+                <!-- Área reservada para exibir a logo do site -->
+                <img src="./img/logo.png" alt="Logo">
+                <!-- Imagem da logo com um texto alternativo caso a imagem não carregue
+   -->
+            </div>
+            <nav class="menu">
+                <!-- Elemento <nav> usado para definir a seção de navegação do site -->
+                <ul>
+                    <!-- Lista não ordenada para os links do menu -->
+                    <li><a href="#secao1">Link 1</a></li>
+                    <!-- Item de lista com link âncora que leva para a seção 1 -->
+                    <li><a href="#secao2">Link 2</a></li>
+                    <!-- Item de lista com link âncora que leva para a seção 2 -->
+                    <li><a href="#secao3">Link 3</a></li>
+                    <!-- Item de lista com link âncora que leva para a seção 3 -->
+                    <li><a href="#secao4">Link 4</a></li>
+                    <!-- Item de lista com link âncora que leva para a seção 4 -->
+                    <li><a href="#secao5">Link 5</a></li>
+                    <!-- Item de lista com link âncora que leva para a seção 5 -->
+                </ul>
+            </nav>
+        </div>
+        <!-- Fim da barra lateral -->
+        <div class="content">
+            <!-- Área principal do conteúdo, onde as seções de postagem serão exibidas
+       -->
+            <div class="box" id="secao1">
+                <!-- Box de conteúdo correspondente à seção 1 -->
+                <h2>Seção 1</h2>
+                <!-- Título da seção 1 -->
+                <p>Conteúdo da seção 1 em formato de postagem.</p>
+                <!-- Parágrafo contendo o texto da seção 1 -->
+            </div>
+            <div class="box" id="secao2">
+                <!-- Box de conteúdo correspondente à seção 2 -->
+                <h2>Seção 2</h2>
+                <!-- Título da seção 2 -->
+                <p>Conteúdo da seção 2 em formato de postagem.</p>
+                <!-- Parágrafo contendo o texto da seção 2 -->
+            </div>
+            <div class="box" id="secao3">
+                <!-- Box de conteúdo correspondente à seção 3 -->
+                <h2>Seção 3</h2>
+                <!-- Título da seção 3 -->
+                <p>Conteúdo da seção 3 em formato de postagem.</p>
+                <!-- Parágrafo contendo o texto da seção 3 -->
+            </div>
+            <div class="box" id="secao4">
+                <!-- Box de conteúdo correspondente à seção 4 -->
+                <h2>Seção 4</h2>
+                <!-- Título da seção 4 -->
+                <p>Conteúdo da seção 4 em formato de postagem.</p>
+                <!-- Parágrafo contendo o texto da seção 4 -->
+            </div>
+            <div class="box" id="secao5">
+                <!-- Box de conteúdo correspondente à seção 5 -->
+                <h2>Seção 5</h2>
+                <!-- Título da seção 5 -->
+                <p>Conteúdo da seção 5 em formato de postagem.</p>
+                <!-- Parágrafo contendo o texto da seção 5 -->
+            </div>
+        </div>
+        <!-- Fim da área de conteúdo -->
+    </div>
+    <!-- Fim do container principal -->
 </body>
+<!-- Fim do corpo do documento HTML -->
+
 </html>
+<!-- Fim do documento HTML -->
